@@ -41,3 +41,22 @@ let house3 = new House('Kitengela', 5, 25000)
 console.log(house1);
 console.log(house2);
 console.log(house3)
+
+// Day One - Real World trial
+function Payment(card_type, number, exp_date, cvv, name){
+    this.card_type = card_type;
+    this.number = number;
+    this.exp_date;
+    this.cvv = cvv;
+    this.name = name
+}
+
+let payment1 = new Payment('MasterCard', 1234, 12/24, 123, 'Steve Harvey');
+let payment2 = new Payment('Visa', 4567, 12/25, 123, 'Dr Strange');
+let payment3 = new Payment('Amex', 1282, 6/24, 123, 'Tony Stark');
+let payment4 = new Payment('Paypal', 182, 12/23, 123, 'Lil Miss Queens');
+
+console.log(payment1);
+console.log(payment2);
+console.log(payment3);
+console.log(payment4);
