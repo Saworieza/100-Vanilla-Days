@@ -60,3 +60,33 @@ console.log(payment1);
 console.log(payment2);
 console.log(payment3);
 console.log(payment4);
+
+function Loans(name, product, amount, savings){
+    this.name = name;
+    this.product = product;
+    this.amount= amount
+    this.savings = savings;
+}
+
+let loan = new Loans('Mwihaki', 'Express', 100000, 20000);
+let loan1 = new Loans('Njoroge', 'Pesa', 100000, 20000);
+let loan2 = new Loans('Winner', 'Advantage', 3839092, 83000);
+let loan3 = new Loans('Steve', 'W Capital', 3893900, 23900);
+
+console.log(loan);
+console.log(loan1);
+console.log(loan2);
+console.log(loan3);
+
+function loanContent(){
+    var myloan = document.getElementById('loan');
+    myloan.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
+    var myloan1 = document.getElementById('loan1');
+    myloan1.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
+    var myloan2 = document.getElementById('loan2');
+    myloan2.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
+    var myloan3 = document.getElementById('loan3');
+    myloan3.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
+}
+
+window.onload = loanContent;
