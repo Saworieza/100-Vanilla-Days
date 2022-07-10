@@ -81,12 +81,21 @@ console.log(loan3);
 function loanContent(){
     var myloan = document.getElementById('loan');
     myloan.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
+}
+function loanContent1(){
     var myloan1 = document.getElementById('loan1');
     myloan1.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
+}
+function loanContent2(){
     var myloan2 = document.getElementById('loan2');
     myloan2.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
+}
+function loanContent3(){
     var myloan3 = document.getElementById('loan3');
     myloan3.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
 }
 
 window.onload = loanContent;
+window.onload = loanContent1;
+window.onload = loanContent2;
+window.onload = loanContent3;
