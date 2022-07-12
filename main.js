@@ -100,15 +100,23 @@ window.onload = loanContent1;
 window.onload = loanContent2;
 window.onload = loanContent3;
 
-function CompountInterest(principal, interest_rate, time_period, time_int_appl){
-    this.principal = principal;
-    this.interest_rate = interest_rate;
-    this.time_period = time_period;
-    this.time_int_appl = time_int_appl;
+// function CompountInterest(principal, interest_rate, time_period, time_int_appl){
+//     this.principal = principal;
+//     this.interest_rate = interest_rate;
+//     this.time_period = time_period;
+//     this.time_int_appl = time_int_appl;
 
-    function FinalAmount(){
-        console.log((${this.principal}(1 + (${this.interest_rate})/${this.time_period}))^${this.time_int_appl} )
-    }
+//     function FinalAmount(){
+//         console.log((${this.principal}(1 + (${this.interest_rate})/${this.time_period}))^${this.time_int_appl} )
+//     }
+// }
+
+// let compound1 = new FinalAmount()
+
+function Perimeter(length = 3, width = 4){
+    this.length = length;
+    this.width = width;
+    perimeter = 2(length+width)
 }
 
-let compound1 = new FinalAmount()
+console.log(perimeter)
