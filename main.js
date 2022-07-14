@@ -82,41 +82,27 @@ function loanContent(){
     var myloan = document.getElementById('loan');
     myloan.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
 }
-function loanContent1(){
-    var myloan1 = document.getElementById('loan1');
-    myloan1.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
-}
-function loanContent2(){
-    var myloan2 = document.getElementById('loan2');
-    myloan2.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
-}
-function loanContent3(){
-    var myloan3 = document.getElementById('loan3');
-    myloan3.innerHTML = [loan.name, loan.product, loan.amount, loan.savings]
-}
 
 window.onload = loanContent;
-window.onload = loanContent1;
-window.onload = loanContent2;
-window.onload = loanContent3;
 
-// function CompountInterest(principal, interest_rate, time_period, time_int_appl){
-//     this.principal = principal;
-//     this.interest_rate = interest_rate;
-//     this.time_period = time_period;
-//     this.time_int_appl = time_int_appl;
 
-//     function FinalAmount(){
-//         console.log((${this.principal}(1 + (${this.interest_rate})/${this.time_period}))^${this.time_int_appl} )
-//     }
-// }
-
-// let compound1 = new FinalAmount()
-
-function Perimeter(length = 3, width = 4){
-    this.length = length;
-    this.width = width;
-    perimeter = 2(length+width)
+// factory function
+function createCirle(radius){
+    return {
+        radius,
+        draw(){
+            console.log(this.draw)
+        }
+    };
 }
 
-console.log(perimeter)
+// Constructor Function
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw')
+    }
+}
+
+const circle = new Circle(1);
+console.log(circle)
