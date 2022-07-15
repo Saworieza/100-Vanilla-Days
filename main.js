@@ -119,3 +119,18 @@ const video ={
 };
 
 video.showTags();
+
+function perimeter(x,y){
+    return 2*(x+y);
+}
+
+console.log('The Perimeter is' + ' ' + perimeter(2,3));
+
+//Back to basics JS -- Manipulating the dom
+const para = document.querySelector('p');
+para.addEventListener('click', updateName);
+
+function updateName(){
+    const name = prompt('Enter A new Name');
+    para.textContent = `Player 1: ${name}`;
+}
