@@ -128,9 +128,11 @@ console.log('The Perimeter is' + ' ' + perimeter(2,3));
 
 //Back to basics JS -- Manipulating the dom
 const para = document.querySelector('p');
+
 para.addEventListener('click', updateName);
 
-function updateName(){
-    const name = prompt('Enter A new Name');
-    para.textContent = `Player 1: ${name}`;
+function updateName() {
+  const name = prompt('Enter a new name');
+  para.textContent = `Player 1: ${name}`;
 }
+
